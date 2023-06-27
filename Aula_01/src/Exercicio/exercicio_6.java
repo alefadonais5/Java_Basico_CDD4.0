@@ -41,18 +41,26 @@ public class exercicio_6 {
 		String pergunta5 = entrada4.next();
 		
 		
-		if (pergunta2.equals("Sim")) {
-			System.out.println("Suspeita");
+		if (pergunta2.equals("Sim") || pergunta3.equals("Sim") || pergunta4.equals("Sim") || pergunta5.equals("Sim"))
+		{
+			if (pergunta5.equals("Sim")) {
+				System.out.println("Assassino");
+				}
+			
+			else if (pergunta3.equals("Sim") || pergunta4.equals("Sim")){
+				System.out.println("Cúmplice");
+				}
+			else {
+				System.out.println("Suspeito");
+			}	
+			
 		}
 		
-		else if (pergunta3.equals("Sim") || (pergunta4.equals("Sim")));{
-			System.out.println("Cúmplice");}
-		
-		if (pergunta5.equals("Sim")); {
-			System.out.println("Assassino");
-		}
-		
-		else(pergunta5.equals("Não") || pergunta3.equals("Não") || (pergunta4.equals("Não"))){
-			system.out.println("Inocente");}
+		else {
+			System.out.println("Inocente");
+			}
 	}
 }
+			
+		
+		
